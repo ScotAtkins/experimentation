@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Module: Developmental Psychology</title>
+    <style>
+        :root {
+            --primary-blue: #2a5298;
+            --secondary-bg: #f4f7f6;
+            --accent-color: #ff7e5f;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            background-color: var(--secondary-bg);
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem 10%;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .module-nav {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--secondary-bg);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        h2 { color: var(--primary-blue); border-left: 5px solid var(--accent-color); padding-left: 10px; }
+
+        .content-box {
+            background: #fff9f4;
+            border: 1px solid #ffe0cc;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th { background-color: var(--primary-blue); color: white; }
+
+        tr:hover { background-color: #f1f1f1; }
+
+        .interactive-quiz {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #eef2f3;
+            border-radius: 8px;
+        }
+
+        .btn {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover { background-color: #1e3c72; }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Module 1: Lifespan Development</h1>
+    <p>Understanding how we grow, change, and stay the same from conception to death.</p>
+</header>
+
+<div class="container">
+    <nav class="module-nav">
+        <strong>Status: 15% Complete</strong>
+        <span>Topic: Psychosocial Theory</span>
+    </nav>
+
+    <section id="introduction">
+        <h2>Nature vs. Nurture</h2>
+        <p>Before diving into specific theories, we must address the fundamental debate in developmental psychology: <strong>Nature (Biology/Genetics)</strong> versus <strong>Nurture (Environment/Experience)</strong>.</p>
+        
+        <div class="content-box">
+            <strong>Key Concept:</strong> Continuous vs. Discontinuous development. Does change happen gradually, like a tree growing, or in distinct stages, like a ladybug's life cycle?
+        </div>
+    </section>
+
+    <section id="theory-table">
+        <h2>Erikson's Psychosocial Stages</h2>
+        <p>Erik Erikson proposed that we pass through eight stages of development, each defined by a specific conflict.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Conflict</th>
+                    <th>Virtue Gained</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0–1.5 Years</td>
+                    <td>Trust vs. Mistrust</td>
+                    <td>Hope</td>
+                </tr>
+                <tr>
+                    <td>1.5–3 Years</td>
+                    <td>Autonomy vs. Shame/Doubt</td>
+                    <td>Will</td>
+                </tr>
+                <tr>
+                    <td>3–6 Years</td>
+                    <td>Initiative vs. Guilt</td>
+                    <td>Purpose</td>
+                </tr>
+                <tr>
+                    <td>6–12 Years</td>
+                    <td>Industry vs. Inferiority</td>
+                    <td>Competence</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="interactive-quiz">
+        <h3>Knowledge Check</h3>
+        <p>A child who is encouraged to explore their environment and given the freedom to play is likely developing which of the following?</p>
+        <form>
+            <input type="radio" id="q1a" name="quiz" value="a">
+            <label for="q1a">Mistrust</label><br>
+            <input type="radio" id="q1b" name="quiz" value="b">
+            <label for="q1b">Initiative</label><br>
+            <input type="radio" id="q1c" name="quiz" value="c">
+            <label for="q1c">Stagnation</label><br><br>
+            <button type="button" class="btn" onclick="alert('Correct! Initiative is developed during the preschool years.')">Submit Answer</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Psychology EdTech Solutions | <a href="#">Resources</a> | <a href="#">Contact Instructor</a>
+</footer>
+
+</body>
+</html>
