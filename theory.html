@@ -3,55 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theories of Developmental Psychology</title>
+    <title>RIT | Theories of Developmental Psychology</title>
     <style>
         :root {
-            --primary: #2c3e50;
-            --accent: #3498db;
-            --bg: #f9f9f9;
-            --white: #ffffff;
-            --text: #444;
+            /* RIT OFFICIAL BRAND COLORS */
+            --rit-orange: #F76902;    /* Pantone 1505 C */
+            --rit-brown: #513328;     /* Pantone 4625 C */
+            --rit-white: #FFFFFF;
+            --rit-gray: #E5E5E5;
+            
+            --primary-text: #222222;
+            --bg-light: #F9F9F9;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background-color: var(--bg);
+            color: var(--primary-text);
+            background-color: var(--bg-light);
             margin: 0;
         }
 
         header {
-            background: var(--primary);
-            color: var(--white);
+            /* Using RIT Brown as the primary header background */
+            background-color: var(--rit-brown);
+            color: var(--rit-white);
             padding: 3rem 1rem;
             text-align: center;
+            border-bottom: 6px solid var(--rit-orange); /* RIT Orange Accent */
         }
 
         .container {
             max-width: 1000px;
-            margin: -2rem auto 2rem;
+            margin: 2rem auto;
             padding: 0 1rem;
         }
 
         .theory-card {
-            background: var(--white);
-            border-radius: 8px;
+            background: var(--rit-white);
+            border-radius: 4px;
             padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid var(--accent);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            /* Consistent RIT Orange top border for all cards */
+            border-top: 5px solid var(--rit-orange);
         }
 
-        h2 { color: var(--primary); margin-top: 0; }
+        h2 { 
+            color: var(--rit-brown); 
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
         
         .theory-meta {
             display: flex;
             gap: 20px;
-            font-size: 0.9rem;
-            color: #7f8c8d;
+            font-size: 0.85rem;
+            color: #666;
             margin-bottom: 1rem;
-            font-style: italic;
+            font-weight: bold;
         }
 
         .concept-grid {
@@ -62,115 +73,114 @@
         }
 
         .concept-item {
-            background: #f0f7ff;
+            background: var(--rit-gray);
             padding: 1.2rem;
-            border-radius: 6px;
-            border-left: 3px solid var(--accent);
+            border-radius: 4px;
+            border-left: 4px solid var(--rit-brown);
         }
 
         .quiz-box {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
-            border-radius: 8px;
+            background: var(--rit-brown);
+            color: var(--rit-white);
+            padding: 2.5rem;
+            border-radius: 4px;
             text-align: center;
         }
 
         .btn {
-            background: var(--accent);
-            color: white;
+            background: var(--rit-orange);
+            color: var(--rit-white);
             border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
+            padding: 12px 30px;
+            border-radius: 2px; /* RIT style is typically more squared */
             cursor: pointer;
             font-size: 1rem;
-            transition: transform 0.2s;
+            font-weight: bold;
+            transition: background 0.2s;
         }
 
-        .btn:hover { transform: translateY(-2px); }
+        .btn:hover { 
+            background: #d45a00; /* Slightly darker orange for hover */
+        }
 
-        footer { text-align: center; padding: 3rem; color: #95a5a6; }
+        footer { 
+            text-align: center; 
+            padding: 3rem; 
+            background: var(--rit-gray);
+            color: var(--rit-brown);
+            font-weight: bold;
+        }
+
+        .rit-logo-placeholder {
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
     </style>
 </head>
 <body>
 
 <header>
+    <div class="rit-logo-placeholder">RIT</div>
     <h1>Major Theories of Development</h1>
-    <p>Exploring the frameworks that define human growth across the lifespan.</p>
+    <p>Psychology Department | Learning Module</p>
 </header>
 
 <div class="container">
 
     <article class="theory-card">
         <div class="theory-meta">
-            <span>Focus: Cognitive Development</span>
-            <span>Key Figure: Jean Piaget</span>
+            <span>COGNITIVE DEVELOPMENT</span>
+            <span>JEAN PIAGET</span>
         </div>
-        <h2>1. Cognitive Stage Theory</h2>
-        <p>Piaget proposed that children are "little scientists" who actively construct their understanding of the world through four distinct stages.</p>
+        <h2>Cognitive Stage Theory</h2>
+        <p>Piaget focused on how children construct a mental model of the world.</p>
         
         <div class="concept-grid">
             <div class="concept-item">
-                <strong>Sensorimotor (0-2y)</strong><br>
-                Learning through senses and motor actions. Key milestone: <em>Object Permanence</em>.
+                <strong>Sensorimotor</strong><br>0-2 Years
             </div>
             <div class="concept-item">
-                <strong>Preoperational (2-7y)</strong><br>
-                Symbolic thought and language emerge. Characterized by <em>Egocentrism</em>.
+                <strong>Preoperational</strong><br>2-7 Years
             </div>
             <div class="concept-item">
-                <strong>Concrete Operational (7-11y)</strong><br>
-                Logical thought about physical events. Mastery of <em>Conservation</em>.
+                <strong>Concrete Operational</strong><br>7-11 Years
             </div>
             <div class="concept-item">
-                <strong>Formal Operational (12y+)</strong><br>
-                Abstract reasoning and hypothetical thinking develop.
+                <strong>Formal Operational</strong><br>12+ Years
             </div>
         </div>
     </article>
 
-    <article class="theory-card" style="border-top-color: #e67e22;">
+    <article class="theory-card">
         <div class="theory-meta">
-            <span>Focus: Psychosocial Development</span>
-            <span>Key Figure: Erik Erikson</span>
+            <span>PSYCHOSOCIAL DEVELOPMENT</span>
+            <span>ERIK ERIKSON</span>
         </div>
-        <h2 style="color: #d35400;">2. Psychosocial Theory</h2>
-        <p>Unlike Piaget, Erikson focused on the entire lifespan, suggesting that social impulses and cultural demands drive development through eight stages of "crises."</p>
-        <ul>
-            <li><strong>Identity vs. Role Confusion (Adolescence):</strong> The search for self and personal values.</li>
-            <li><strong>Generativity vs. Stagnation (Middle Adulthood):</strong> The need to create or nurture things that will outlast the individual.</li>
-            <li><strong>Integrity vs. Despair (Late Adulthood):</strong> Reflecting on life with either satisfaction or regret.</li>
-        </ul>
+        <h2>Psychosocial Theory</h2>
+        <p>Focuses on social impulses and cultural demands across eight stages of life.</p>
     </article>
 
-    <article class="theory-card" style="border-top-color: #27ae60;">
+    <article class="theory-card">
         <div class="theory-meta">
-            <span>Focus: Sociocultural Context</span>
-            <span>Key Figure: Lev Vygotsky</span>
+            <span>SOCIOCULTURAL CONTEXT</span>
+            <span>LEV VYGOTSKY</span>
         </div>
-        <h2 style="color: #27ae60;">3. Sociocultural Theory</h2>
-        <p>Vygotsky argued that social interaction and culture are fundamental to cognitive development. Learning happens first on a social level, then on an individual level.</p>
-        
-        <div class="concept-item" style="background: #eef9f1; border-left-color: #27ae60;">
-            <strong>The Zone of Proximal Development (ZPD):</strong> 
-            The gap between what a learner can do without help and what they can do with guidance. This is where the most effective "Scaffolding" occurs.
-        </div>
+        <h2>Sociocultural Theory</h2>
+        <p>Emphasizes the fundamental role of social interaction in the development of cognition.</p>
     </article>
 
     <section class="quiz-box">
-        <h3>Test Your Knowledge</h3>
-        <p>Which theorist emphasized that learning is a social process facilitated by a "More Knowledgeable Other"?</p>
-        <div style="margin-top: 1rem;">
-            <button class="btn" onclick="alert('Try again! Piaget focused more on individual exploration.')">Piaget</button>
-            <button class="btn" onclick="alert('Correct! Vygotsky focused on social interaction.')">Vygotsky</button>
-            <button class="btn" onclick="alert('Not quite! Erikson focused on psychosocial conflicts.')">Erikson</button>
-        </div>
+        <h3>Check Your Understanding</h3>
+        <p>Ready to move to the next section?</p>
+        <button class="btn" onclick="alert('Module Saved. Great work, Tiger!')">COMPLETE MODULE</button>
     </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2026 Developmental Psych Course Portal</p>
+    <p>ROCHESTER INSTITUTE OF TECHNOLOGY</p>
 </footer>
 
 </body>
